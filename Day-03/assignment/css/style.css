@@ -43,3 +43,8 @@ body {
     flex:70%;
 }
 
+aside {
+    float:right;
+    overflow: hidden;
+}
+
