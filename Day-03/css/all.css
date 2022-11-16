@@ -1,0 +1,11 @@
+body {
+    background-color:burlywood;
+}
+
+#xxl, #xl, #lg, #md, #sm {
+    display: none;
+}
+
+#xs {
+    display: block;
+}

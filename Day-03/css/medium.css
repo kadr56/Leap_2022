@@ -1,0 +1,11 @@
+body {
+    background-color:brown;
+}
+
+#xxl, #xl, #lg, #xs {
+    display: none;
+}
+
+#md {
+    display: block;
+}

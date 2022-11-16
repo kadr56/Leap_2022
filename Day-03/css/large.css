@@ -1,0 +1,11 @@
+body {
+    background-color:seagreen;
+}
+
+#xxl, #xl, #sm, #xs {
+    display: none;
+}
+
+#lg {
+    display: block;
+}
