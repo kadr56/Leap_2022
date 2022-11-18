@@ -1,0 +1,14 @@
+
+
+.menu {
+    display: inline;
+}
+
+.drop-down {
+    display:none;
+
+}
+
+.menu:hover .drop-down {
+    display: block;
+}

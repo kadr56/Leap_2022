@@ -12,6 +12,11 @@
             text-decoration: none;
             padding: 15px 20px;
         }
+
+        .row div {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
     </style>
     <title>Document</title>
 </head>
@@ -19,22 +24,25 @@
     
     <nav class="container">
         <div class="row bg-info">
-            <div class="col-2">
+            <div class="col-2 bg-warning">
                 PineconeLOGO
             </div>
-            <div class="col-10">
+            <div class="col-8 bg-secondary">
                 <a href="#">Home</a>
                 <a href="#">Product</a>
                 <a href="#">Contact Us</a>
+            </div>
+            <div class="col-2 bg-warning">
+                Dropdown
             </div>
         </div> 
     </nav>
 
     <main class="container text-center">
         <div class="row">
-            <div class="col-md-3 bg-primary">
+            <div class="col-md-3 d-flex flex-md-column justify-content-around flex-sm-column justify-content-md-start bg-primary text-center">
                 <div class="row">
-                    <img src="./img/lays-logo.png" width="100px" alt="">
+                    Image
                 </div>
                 <div class="row">links</div>
                 <div class="row">links</div>
