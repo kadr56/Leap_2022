@@ -8,7 +8,7 @@
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
     <style>
-        .col-10 a{
+        /* .col-10 a{
             text-decoration: none;
             padding: 15px 20px;
         }
@@ -16,31 +16,64 @@
         .row div {
             padding-top: 10px;
             padding-bottom: 10px;
+        } */
+
+        .menu-list ul {
+
+        }
+
+        .menu-list li{
+            list-style-type: none;
+            display: inline;
+            overflow: hidden;
+        }
+        .menu-list a {
+            text-decoration: none;
+            color: white;
+            background-color: #333;
+            padding: 10px;
+        }
+
+        .menu-list a:hover {
+            background-color: #111;
+        }
+
+        .small-menu li {
+            display: block;
         }
     </style>
     <title>Document</title>
 </head>
 <body>
     
-    <nav class="container">
+    <nav class="container-fluid text-center">
         <div class="row bg-info">
-            <div class="col-2 bg-warning">
+            <div class="col-6 col-sm-2 bg-warning">
                 PineconeLOGO
             </div>
-            <div class="col-8 bg-secondary">
-                <a href="#">Home</a>
-                <a href="#">Product</a>
-                <a href="#">Contact Us</a>
+            <div class="col-8 d-flex flex-column flex-md-row d-none d-sm-block menu-list"  style="background-color: #333;">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
             </div>
-            <div class="col-2 bg-warning">
+            <div class="col-6 col-sm-2 bg-success">
                 Dropdown
+            </div>
+            <div class="col-12 d-flex flex-column flex-md-row d-block d-sm-none menu-list" style="background-color: #333;">
+                <ul class="d-flex flex-column small-menu">
+                    <li class="p-2"><a href="#">Home</a></li>
+                    <li class="p-2"><a href="#">Product</a></li>
+                    <li class="p-2"><a href="#">Contact Us</a></li>
+                </ul>
             </div>
         </div> 
     </nav>
 
     <main class="container text-center">
         <div class="row">
-            <div class="col-md-3 d-flex flex-md-column justify-content-around flex-sm-column justify-content-md-start bg-primary text-center">
+            <div class="col-12 col-md-3 d-flex d-flex-column flex-md-column justify-content-around flex-sm-column justify-content-md-start bg-primary text-center">
                 <div class="row">
                     Image
                 </div>
