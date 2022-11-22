@@ -10,9 +10,10 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
   <title>Document</title>
   <style>
-    *{
+    * {
       box-sizing: border-box;
     }
+
     .nav-item a {
       color: #888;
     }
@@ -62,8 +63,8 @@
         <button type="button" class="btn btn-dark text-primary btn-outline-primary" data-bs-toggle="modal"
           data-bs-target="#exampleModal">Get Started</button>
       </div>
-      <div class="col-12 col-sm-6 my-5 d-none d-sm-block">
-        <img class="rounded border border-secondary" src="../img/space.jpeg" alt="space image" width="100%">
+      <div class="col-12 col-sm-6 my-5 d-none d-sm-block shadow">
+        <img class="rounded" src="../img/space.jpeg" alt="space image" width="100%">
       </div>
     </div>
   </div>
@@ -142,33 +143,82 @@
 
   <!-- About us -->
   <div class="container-liquid bg-light text-center p-5">
-    <div class="row py-5">
-      <img src="../img/about-us-2.png" alt="">
+    <div class="row align-items-center justify-content-between">
+      <div class="col-md">
+        <img src="../img/about-us-2.png" class="img-fluid w-100" alt="">
+      </div>
+      <div class="col-md p-5 text-start">
+        <h3>ABOUT US</h3>
+        <p class="fs-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos perspiciatis recusandae
+          eveniet esse magni fuga nesciunt! Illo blanditiis facilis ad?</p>
+        <p class="fs-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit pariatur ut
+          exercitationem non repellat ipsum rerum dolores culpa inventore totam!</p>
+
+        <div class="collapse" id="readMore-1">
+          <div class="card card-body fs-6 border-0">
+            Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Expedita ducimus sequi ut rem enim deserunt blanditiis at illum atque alias quasi eaque,
+            nemo officia est accusantium libero nostrum similique iusto? Accusamus odio, harum, eius aperiam rerum et ut
+            a
+            assumenda, modi possimus saepe consequatur accusantium. Odio similique, illum distinctio, totam velit quam
+            excepturi doloremque hic officiis perferendis amet. Ipsa, molestias officiis neque non est quam in
+            aspernatur,
+            harum consectetur et doloribus? Nihil architecto praesentium blanditiis quasi unde, voluptates veniam,
+            quibusdam inventore corrupti odio, neque optio voluptas voluptatem excepturi nulla placeat ad minima.
+            Voluptates dolorem ducimus vitae illum quidem, officia architecto!
+          </div>
+        </div>
+
+        <button class="btn button-white border border-secondary" data-bs-toggle="collapse" href="#readMore-1">
+          <i class="bi bi-chevron-right">Read more</i>
+        </button>
+      </div>
+
     </div>
-    <div class="row">
-      <h3>ABOUT US</h3>
-      <p class="font-weight-bold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos perspiciatis recusandae
-        eveniet esse magni fuga nesciunt! Illo blanditiis facilis ad?</p>
-      <p class="font-weight-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit pariatur ut
-        exercitationem non repellat ipsum rerum dolores culpa inventore totam!</p>
-    </div>
-    <button class="btn button-white border border-secondary mt-3 mb-5">> Read more</button>
+
+
   </div>
 
   <!-- Services -->
   <div class="container-liquid bg-dark text-light text-center m-2 p-5">
-    <div class="row">
-      <h3>SERVICES</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos perspiciatis recusandae
-        eveniet esse magni fuga nesciunt! Illo blanditiis facilis ad?</p>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit pariatur ut
-        exercitationem non repellat ipsum rerum dolores culpa inventore totam!</p>
-      <p id="more">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus a alias voluptatum, praesentium distinctio laborum deserunt ducimus aperiam, perspiciatis debitis nostrum dolorum cum facere consectetur commodi beatae qui id minima?</p>
-    </div>
 
-    <button class="btn button-dark text-light border border-secondary mt-3 mb-5">> Read more</button>
-    <div class="row py-5">
-      <img src="../img/about-us-2.png" alt="">
+    <div class="row align-items-center justify-content-between">
+
+      <div class="col-md p-5 text-start">
+        <h3>SERVICES</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos perspiciatis recusandae
+          eveniet esse magni fuga nesciunt! Illo blanditiis facilis ad?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit pariatur ut
+          exercitationem non repellat ipsum rerum dolores culpa inventore totam!</p>
+        <p id="more">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus a alias voluptatum, praesentium
+          distinctio laborum deserunt ducimus aperiam, perspiciatis debitis nostrum dolorum cum facere consectetur
+          commodi
+          beatae qui id minima?</p>
+
+        <div class="collapse" id="readMore-2">
+          <div class="card card-body fs-6 border-0 bg-dark text-light">
+            Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Expedita ducimus sequi ut rem enim deserunt blanditiis at illum atque alias quasi eaque,
+            nemo officia est accusantium libero nostrum similique iusto? Accusamus odio, harum, eius aperiam rerum et ut
+            a
+            assumenda, modi possimus saepe consequatur accusantium. Odio similique, illum distinctio, totam velit quam
+            excepturi doloremque hic officiis perferendis amet. Ipsa, molestias officiis neque non est quam in
+            aspernatur,
+            harum consectetur et doloribus? Nihil architecto praesentium blanditiis quasi unde, voluptates veniam,
+            quibusdam inventore corrupti odio, neque optio voluptas voluptatem excepturi nulla placeat ad minima.
+            Voluptates dolorem ducimus vitae illum quidem, officia architecto!
+          </div>
+        </div>
+
+        <button class="btn button-dark text-light border border-secondary" data-bs-toggle="collapse"
+          href="#readMore-2"><i class="bi bi-chevron-right">Read
+            more</i></button>
+
+      </div>
+
+      <div class="col-md py-5">
+        <img src="../img/about-us-2.png" class="img-fluid w-100" alt="">
+      </div>
     </div>
   </div>
 
@@ -177,23 +227,21 @@
     <div class="row">
       <h3>FAQ</h3>
     </div>
-    <div class="accordion" id="FAQ" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+    <div class="accordion accordion-flush" id="FAQ" data-bs-toggle="collapse" data-bs-target="#collapseOne">
 
       <!-- FAQ 1 -->
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingOne">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-            aria-expanded="true" aria-controls="collapseOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
             Where exactly are you located?
           </button>
         </h2>
-        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#FAQ">
-          <div class="accordion-body">
-            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
-            plugin adds the appropriate classes that we use to style each element. These classes control the
-            overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of
-            this with custom CSS or overriding our default variables. It's also worth noting that just about any
-            HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#FAQ">
+          <div class="accordion-body text-start">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora nisi autem, quaerat magnam quasi amet.
+            Porro, vel provident, eius excepturi soluta repellat, illum velit corporis eaque dolore nulla. Architecto
+            vel quam corporis ipsam voluptas laudantium rem excepturi fugiat illum! Veniam reiciendis ullam temporibus
+            aspernatur iusto, maiores error nisi! Quas, dignissimos!
           </div>
         </div>
       </div>
@@ -201,37 +249,32 @@
       <!-- FAQ 2 -->
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingOne">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-            aria-expanded="true" aria-controls="collapseTwo">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
             How much does it cost to attentd?
           </button>
         </h2>
-        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#FAQ">
-          <div class="accordion-body">
-            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
-            plugin adds the appropriate classes that we use to style each element. These classes control the
-            overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of
-            this with custom CSS or overriding our default variables. It's also worth noting that just about any
-            HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#FAQ">
+          <div class="accordion-body text-start">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora nisi autem, quaerat magnam quasi amet.
+            Porro, vel provident, eius excepturi soluta repellat, illum velit corporis eaque dolore nulla. Architecto
+            vel quam corporis ipsam voluptas laudantium rem excepturi fugiat illum! Veniam reiciendis ullam temporibus
+            aspernatur iusto, maiores error nisi! Quas, dignissimos!
           </div>
         </div>
       </div>
       <!-- FAQ 3 -->
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingOne">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
-            aria-expanded="true" aria-controls="collapseThree">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
             What do I need to know?
           </button>
         </h2>
-        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-          data-bs-parent="#FAQ">
-          <div class="accordion-body">
-            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
-            plugin adds the appropriate classes that we use to style each element. These classes control the
-            overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of
-            this with custom CSS or overriding our default variables. It's also worth noting that just about any
-            HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#FAQ">
+          <div class="accordion-body text-start">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora nisi autem, quaerat magnam quasi amet.
+            Porro, vel provident, eius excepturi soluta repellat, illum velit corporis eaque dolore nulla. Architecto
+            vel quam corporis ipsam voluptas laudantium rem excepturi fugiat illum! Veniam reiciendis ullam temporibus
+            aspernatur iusto, maiores error nisi! Quas, dignissimos!
           </div>
         </div>
       </div>
@@ -239,19 +282,16 @@
       <!-- FAQ 4 -->
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingOne">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
-            aria-expanded="true" aria-controls="collapseThree">
-            What do I need to know?
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+            How do I sign-up?
           </button>
         </h2>
-        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-          data-bs-parent="#FAQ">
-          <div class="accordion-body">
-            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
-            plugin adds the appropriate classes that we use to style each element. These classes control the
-            overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of
-            this with custom CSS or overriding our default variables. It's also worth noting that just about any
-            HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#FAQ">
+          <div class="accordion-body text-start">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora nisi autem, quaerat magnam quasi amet.
+            Porro, vel provident, eius excepturi soluta repellat, illum velit corporis eaque dolore nulla. Architecto
+            vel quam corporis ipsam voluptas laudantium rem excepturi fugiat illum! Veniam reiciendis ullam temporibus
+            aspernatur iusto, maiores error nisi! Quas, dignissimos!
           </div>
         </div>
       </div>
@@ -259,19 +299,17 @@
       <!-- FAQ 5 -->
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingOne">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
-            aria-expanded="true" aria-controls="collapseThree">
-            What do I need to know?
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive"
+            aria-expanded="true">
+            Do you help me find a job?
           </button>
         </h2>
-        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-          data-bs-parent="#FAQ">
-          <div class="accordion-body">
-            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
-            plugin adds the appropriate classes that we use to style each element. These classes control the
-            overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of
-            this with custom CSS or overriding our default variables. It's also worth noting that just about any
-            HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#FAQ">
+          <div class="accordion-body text-start">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora nisi autem, quaerat magnam quasi amet.
+            Porro, vel provident, eius excepturi soluta repellat, illum velit corporis eaque dolore nulla. Architecto
+            vel quam corporis ipsam voluptas laudantium rem excepturi fugiat illum! Veniam reiciendis ullam temporibus
+            aspernatur iusto, maiores error nisi! Quas, dignissimos!
           </div>
         </div>
       </div>
@@ -280,81 +318,83 @@
   </div>
 
   <!-- Our team -->
-  <div class="container-liquid bg-secondary text-light text-center p-4">
-    <div class="row">
-      <h3>Our Team</h3>
-      <p class="font-weight-bold">We listened to our people about what and how they wanted to learn and most made it
-        clear business was their preferred platform.</p>
+
+  <section id="our-team" class="p-5 bg-secondary">
+    <div class="container">
+      <h2 class="text-center text-white">Our team</h2>
+      <p class="fs-4 text-center text-white mb-5">
+        We listened to our people about what and how they wanted to learn and most made it
+        clear business was their preferred platform.
+      </p>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="card bg-light">
+            <div class="card-body text-center">
+              <img src="../img/profile-pic3.jpg" alt="" class="rounded-circle mb-3" style="object-fit: cover;"
+                width="130px" height="130px">
+              <h3 class="card-title mb-3">John Doe</h3>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis reiciendis nemo
+                expedita dolor rerum itaque?</p>
+              <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+              <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+              <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+              <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card bg-light">
+            <div class="card-body text-center">
+              <img src="../img/profile-pic4.jpg" alt="" class="rounded-circle mb-3" style="object-fit: cover;"
+                width="130px" height="130px">
+              <h3 class="card-title mb-3">John Doe</h3>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis reiciendis nemo
+                expedita dolor rerum itaque?</p>
+              <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+              <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+              <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+              <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card bg-light">
+            <div class="card-body text-center">
+              <img src="../img/profile-pic5.jpg" alt="" class="rounded-circle mb-3" style="object-fit: cover;"
+                width="130px" height="130px">
+              <h3 class="card-title mb-3">John Doe</h3>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis reiciendis nemo
+                expedita dolor rerum itaque?</p>
+              <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+              <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+              <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+              <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card bg-light">
+            <div class="card-body text-center">
+              <img src="../img/profile-pic6.jpg" alt="" class="rounded-circle mb-3" style="object-fit: cover;"
+                width="130px" height="130px">
+              <h3 class="card-title mb-3">John Doe</h3>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis reiciendis nemo
+                expedita dolor rerum itaque?</p>
+              <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+              <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+              <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+              <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
-
-    <div class="row">
-      <div class="col-12 col-sm-6 col-md-3 card text-secondary justify-content-center">
-        <img class="rounded-circle mx-auto" src="../img/profile-pic3.jpg" style="object-fit: cover;" width="130px"
-          height="130px" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">John Doe</h5>
-          <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum quasi amet porro unde
-            natus maiores, ad odio incidunt. Assumenda, placeat.</p>
-  
-          <i class="bi bi-twitter"></i>
-          <i class="bi bi-facebook"></i>
-          <i class="bi bi-linkedin"></i>
-          <i class="bi bi-instagram"></i>
-        </div>
-      </div>
-  
-      <div class="col-12 col-sm-6 col-md-3 card text-secondary justify-content-center">
-        <img class="rounded-circle mx-auto" src="../img/profile-pic4.jpg" style="object-fit: cover;" width="130px"
-          height="130px" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">John Doe</h5>
-          <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum quasi amet porro unde
-            natus maiores, ad odio incidunt. Assumenda, placeat.</p>
-  
-          <i class="bi bi-twitter"></i>
-          <i class="bi bi-facebook"></i>
-          <i class="bi bi-linkedin"></i>
-          <i class="bi bi-instagram"></i>
-        </div>
-      </div>
-  
-      <div class="col-12 col-sm-6 col-md-3 card text-secondary justify-content-center">
-        <img class="rounded-circle mx-auto img-liquid" src="../img/profile-pic5.jpg" style="object-fit: cover;" width="130px"
-          height="130px" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">John Doe</h5>
-          <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum quasi amet porro unde
-            natus maiores, ad odio incidunt. Assumenda, placeat.</p>
-  
-          <i class="bi bi-twitter"></i>
-          <i class="bi bi-facebook"></i>
-          <i class="bi bi-linkedin"></i>
-          <i class="bi bi-instagram"></i>
-        </div>
-      </div>
-
-      <div class="col-12 col-sm-6 col-md-3 card text-secondary justify-content-center">
-        <img class="rounded-circle mx-auto img-liquid" src="../img/profile-pic6.jpg" style="object-fit: cover;" width="130px"
-          height="130px" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">John Doe</h5>
-          <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum quasi amet porro unde
-            natus maiores, ad odio incidunt. Assumenda, placeat.</p>
-  
-          <i class="bi bi-twitter"></i>
-          <i class="bi bi-facebook"></i>
-          <i class="bi bi-linkedin"></i>
-          <i class="bi bi-instagram"></i>
-        </div>
-      </div>
-
-    </div>
-
-
-
-
-
-  </div>
+  </section>
 
 
   <!-- Contact info -->
@@ -391,7 +431,7 @@
               <p>Phone: +15589 55488 55</p>
             </li>
             <li>
-              <p>Email: info@example.com</p> 
+              <p>Email: info@example.com</p>
             </li>
           </ul>
         </div>
@@ -452,7 +492,7 @@
             </small></p>
           <ul class="list-unstyled text-primary">
             <li>
-              <a href="#!" class="nav-link"> 
+              <a href="#!" class="nav-link">
                 <i class="bi bi-twitter p-1"></i>
                 <i class="bi bi-facebook p-1"></i>
                 <i class="bi bi-linkedin p-1"></i>
@@ -475,7 +515,7 @@
 
   <a id="back-to-top" href="#" class="btn btn-lg " role="button">
     <i class="bi bi-arrow-up-circle-fill text-danger h1 back-to-top position-fixed bottom-0 end-0 me-2"></i></a>
-  
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
     </script>
