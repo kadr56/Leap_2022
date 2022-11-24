@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
 
     <style>
-        /* .col-10 a{
+      /* .col-10 a{
             text-decoration: none;
             padding: 15px 20px;
         }
@@ -18,145 +22,172 @@
             padding-bottom: 10px;
         } */
 
-        .menu-list ul {
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
 
-        }
+      /* *,
+      *::before,
+      *::after {
+        box-sizing: inherit;
+      } */
 
-        .menu-list li{
-            list-style-type: none;
-            display: inline;
-            overflow: hidden;
-        }
-        .menu-list a {
-            text-decoration: none;
-            color: white;
-            background-color: #333;
-            padding: 10px;
-        }
+      .menu-list ul {
+      }
 
-        .menu-list a:hover {
-            background-color: #111;
-        }
+      .menu-list li {
+        list-style-type: none;
+        display: inline;
+        overflow: hidden;
+      }
+      .menu-list a {
+        text-decoration: none;
+        color: white;
+        background-color: #333;
+        padding: 10px;
+      }
 
-        .small-menu li {
-            display: block;
-        }
+      .menu-list a:hover {
+        background-color: #111;
+      }
+
+      .small-menu li {
+        display: block;
+      }
     </style>
-    <title>Document</title>
-</head>
-<body>
-    
+    <title>Layout Exercise</title>
+  </head>
+  <body>
     <nav class="container-fluid text-center">
-        <div class="row bg-info">
-            <div class="col-6 col-sm-2 bg-warning">
-                PineconeLOGO
-            </div>
-            <div class="col-8 d-flex flex-column flex-md-row d-none d-sm-block menu-list"  style="background-color: #333;">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Product</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-            </div>
-            <div class="col-6 col-sm-2 bg-success">
-                Dropdown
-            </div>
-            <div class="col-12 d-flex flex-column flex-md-row d-block d-sm-none menu-list" style="background-color: #333;">
-                <ul class="d-flex flex-column small-menu">
-                    <li class="p-2"><a href="#">Home</a></li>
-                    <li class="p-2"><a href="#">Product</a></li>
-                    <li class="p-2"><a href="#">Contact Us</a></li>
-                </ul>
-            </div>
-        </div> 
+      <div class="row bg-info">
+        <div class="col-6 col-sm-2 bg-warning">
+          <a class="navbar-brand" href="#">Logo Brand</a>
+        </div>
+        <div
+          class="col-8 d-flex flex-column flex-md-row d-none d-sm-block menu-list"
+          style="background-color: #333"
+        >
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-sm-2 bg-success">Dropdown</div>
+        <div
+          class="col-12 d-flex flex-column flex-md-row d-block d-sm-none menu-list"
+          style="background-color: #333"
+        >
+          <ul class="d-flex flex-column small-menu">
+            <li class="p-2"><a href="#">Home</a></li>
+            <li class="p-2"><a href="#">Product</a></li>
+            <li class="p-2"><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
 
-    <main class="container text-center">
-        <div class="row">
-            <div class="col-12 col-md-3 d-flex d-flex-column flex-md-column justify-content-around flex-sm-column justify-content-md-start bg-primary text-center">
-                <div class="row">
-                    Image
-                </div>
-                <div class="row">links</div>
-                <div class="row">links</div>
-                <div class="row">links</div>
-            </div>
-            <div class="col-md-9 bg-secondary">
-                <div class="row">
-                    <div class="col-3 bg-success">
-                        <div class="row">
-                            <h4>Title</h4>
-                            <img src="./img/lays-logo.png" width="100px" alt="">
-                        </div>
-                        <div class="row">
-                            <h4>Title</h4>
-                            <img src="./img/lays-logo.png" width="100px" alt="">
-                        </div>
-                        <div class="row">
-                            <h4>Title</h4>
-                            <img src="./img/lays-logo.png" width="100px" alt="">
-                        </div>
-                        <div class="row">
-                            <h4>Title</h4>
-                            <img src="./img/lays-logo.png" width="100px" alt="">
-                        </div>
-                    </div>
-                    <div class="col-9 bg-light">
-                        <img src="./img/lays-logo.png" width="200px" alt="" style="float: left;">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis quo voluptatibus voluptates molestias ex delectus inventore nam at itaque nobis voluptatem distinctio doloribus assumenda perspiciatis fuga suscipit est deleniti nesciunt earum repudiandae, obcaecati sed reprehenderit. Libero facilis, iure qui tenetur minima in illum cum animi. Dignissimos, unde! Consectetur excepturi soluta veritatis similique temporibus voluptatem expedita magni ipsum sequi, eum quisquam impedit velit ut nobis aspernatur, repellendus suscipit exercitationem id quasi. Ipsum facilis, earum impedit, delectus dolore molestias consequuntur rem necessitatibus dicta ullam adipisci quos expedita deserunt tempore rerum eligendi neque culpa quis repellat, ut voluptatum dolorum? Vero itaque nulla error.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, vitae! Quo obcaecati eaque est omnis. Cum distinctio ex iusto impedit perspiciatis ducimus voluptates praesentium quis, officiis nesciunt libero et. Error.</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-2">
-                        Settings
-                    </div>
-                    <div class="col-1">
-                        toggle
-                    </div>
-                    <div class="col-1">
-                        Select
-                    </div>
-                    <div class="col-2">
-                        <input type="text" placeholder="Input">
-                    </div>
-                    <div class="col-2">
-                        
-                    </div>
-                    <div class="col-2">                        
-                        <a href="#" class="btn btn-primary">Cancel Button</a>
-                    </div>
-                    <div class="col-2">
-                        <a href="#" class="btn btn-primary">Save button</a>
-                    </div>
+    <main class="container text-center border">
+      <div class="row">
+        <div
+          class="col-12 col-md-3 d-flex d-flex-column flex-md-column justify-content-around flex-sm-column justify-content-md-start bg-primary text-center ps-5"
+        >
+          <div class="row">Image</div>
+          <div class="row">links</div>
+          <div class="row">links</div>
+          <div class="row">links</div>
+        </div>
 
+        <div class="col-md-9 d-flex-column">
+          <div class="row bg-success d-flex flex-nowrap">
+            <div
+              class="col-3 bg-light border border-3 rounded rounded-3 pt-md-3"
+            >
+              <div class="row bg-primary rounded-4 m-sm-2 my-2">
+                <h5>Title</h5>
+                <img src="./img/lays-logo.png" width="100px" alt="" />
+              </div>
+              <div class="row bg-primary rounded-4 m-sm-2 my-2">
+                <h5>Title</h5>
+                <img src="./img/lays-logo.png" width="100px" alt="" />
+              </div>
+              <div class="row bg-primary rounded-4 m-sm-2 my-2">
+                <h5>Title</h5>
+                <img src="./img/lays-logo.png" width="100px" alt="" />
+              </div>
+              <div class="row bg-primary rounded-4 m-sm-2 my-2">
+                <h5>Title</h5>
+                <img src="./img/lays-logo.png" width="100px" alt="" />
+              </div>
+            </div>
+            <div
+              class="col-9 bg-light border border-3 rounded rounded-3 m-md-3 p-md-4"
+            >
+              <div class="row">
+                <div class="col-md w-100">
+                  <img src="./img/lays-logo.png" width="100%" alt="" />
                 </div>
-                
+
+                <div class="col-md">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Blanditiis quo voluptatibus voluptates molestias ex delectus
+                    inventore nam at itaque nobis voluptatem distinctio
+                    doloribus assumenda perspiciatis fuga suscipit est deleniti
+                    nesciunt earum repudiandae, obcaecati sed reprehenderit.
+                    Libero facilis, iure qui tenetur minima in illum cum animi.
+                    Dignissimos, unde! Consectetur excepturi soluta veritatis
+                    similique temporibus voluptatem expedita magni ipsum sequi,
+                    eum quisquam impedit velit ut nobis aspernatur, repellendus
+                    suscipit exercitationem id quasi. Ipsum facilis, earum
+                    impedit, delectus dolore molestias consequuntur rem
+                    necessitatibus dicta ullam adipisci quos expedita deserunt
+                    tempore rerum eligendi neque culpa quis repellat, ut
+                    voluptatum dolorum? Vero itaque nulla error.
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
+                    vitae! Quo obcaecati eaque est omnis. Cum distinctio ex
+                    iusto impedit perspiciatis ducimus voluptates praesentium
+                    quis, officiis nesciunt libero et. Error.
+                  </p>
+                </div>
+              </div>
             </div>
+          </div>
+
+          <div class="row mb-5">
+            <div class="col-2 col-sm-2">Settings</div>
+            <div class="col-2 col-sm-1">toggle</div>
+            <div class="col-2 col-sm-1">Select</div>
+            <div class="col-2 col-sm-2">
+              <input type="text" placeholder="Input" />
+            </div>
+            <div class="d-none d-sm-block col-2"></div>
+            <div class="d-block d-sm-none col-6"></div>
+            <div class="col-3 col-sm-2">
+              <a href="#" class="btn btn-primary fs-small">Cancel Button</a>
+            </div>
+            <div class="col-3 col-sm-2">
+              <a href="#" class="btn btn-primary">Save button</a>
+            </div>
+          </div>
         </div>
-        <div class="row bg-info">
-            <div class="col-2">
-                Footer text-1
-            </div>
-            <div class="col-2">
-                Footer text-2
-            </div>
-            <div class="col-6">
-                
-            </div>
-            <div class="col-2">
-                Footer text-3
-            </div>
-        </div>
+      </div>
+      <div class="row bg-info">
+        <div class="col-3 col-sm-2">Footer text-1</div>
+        <div class="col-3 col-sm-2">Footer text-2</div>
+        <div class="d-none d-sm-block col-6"></div>
+        <div class="col-3 col-sm-2">Footer text-3</div>
+      </div>
     </main>
 
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
-        </script>
-
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
