@@ -49,7 +49,7 @@ let num2 = 4;
 let num3 = 3;
 let num4 = 7;
 
-console.log("====================== Exercise 1.1 ================");
+console.log("====================== Exercise 1.2 ================");
 console.log("num1 = " + num1);
 console.log("num2 = " + num2);
 console.log("num3 = " + num3);
