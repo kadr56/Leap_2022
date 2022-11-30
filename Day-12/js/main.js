@@ -219,20 +219,76 @@ console.log("Sum of digit = " + sum);
 
 
 
-// Exercise 3
-console.log("====================== Exercise 3 ================");
 
-const year = prompt("Жил оруулна уу.");
-let result = "";
 
-// if (((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0))
-// {
-//     console.log(`${year} = Өндөр жил`);
+// // Exercise 3
+// console.log("====================== Exercise 3 ================");
+
+// const year = prompt("Жил оруулна уу.");
+// let result = "";
+
+// // if (((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0))
+// // {
+// //     console.log(`${year} = Өндөр жил`);
+// // }
+// // else {
+// //     console.log(`${year} = Өндөр жил биш`);
+// // }
+
+
+// (((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0)) ? result = "Өндөр жил" : result = "Өндөр жил биш";
+// console.log(year + " он = " + result);
+
+
+
+// Exercise 4
+console.log("====================== Exercise 4 ================");
+let a = Number(prompt("Insert number 1"));
+let b = Number(prompt("Insert number 2"));
+let c = Number(prompt("Insert number 3"));
+
+let max = 0;
+let min = 0;
+
+// if (a > b) {
+//     if(a > c ) {
+//         max = a;
+//     }
+//     else {
+//         max = c;
+//     }
+// } else {
+//     if (b > c) {
+//         max = b;
+//     } else {
+//         max = c
+//     }
 // }
-// else {
-//     console.log(`${year} = Өндөр жил биш`);
-// }
+// console.log(a + " " + b + " " + c)
+// console.log(max)
 
 
-(((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0)) ? result = "Өндөр жил" : result = "Өндөр жил биш";
-console.log(year + " он = " + result);
+if (a >= b && a >=c) {
+    max = a;
+} 
+else if (b >= a && b >= c) {
+    max = b;
+} 
+else {
+    max = c;
+    }
+
+console.log("num1 = " + a + "\nnum2 = " + b + "\nnum3 = " + c);
+console.log("max number is " + max);
+
+if (a <= b && a <=c) {
+    min = a;
+} 
+else if (b <= a && b <= c) {
+    min = b;
+} 
+else {
+    min = c;
+    }
+
+console.log("min number is " + min);
