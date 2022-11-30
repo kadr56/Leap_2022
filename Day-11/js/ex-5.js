@@ -2,7 +2,7 @@
 let a = Number(prompt("Insert number 1"));
 let b = Number(prompt("Insert number 2"));
 let c = Number(prompt("Insert number 3"));
-let d = Number(prompt("Insert number 3"));
+let d = Number(prompt("Insert number 4"));
 
 let min = 0;
 
