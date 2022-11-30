@@ -1,6 +1,4 @@
 
-// Exercise 4
-console.log("====================== Exercise 4 ================");
 let a = Number(prompt("Insert number 1"));
 let b = Number(prompt("Insert number 2"));
 let c = Number(prompt("Insert number 3"));
