@@ -117,64 +117,64 @@
 
 
 // Exercise - 5
-// let weight = prompt ("Insert Weight");
-// let height = prompt ("Insert height in meter");
-// let bmi = weight/(height*height);
-// console.log("BMI = " + bmi);
+let weight = prompt ("Insert Weight");
+let height = prompt ("Insert height in meter");
+let bmi = weight/(height*height);
+console.log("BMI = " + bmi);
 
-// if (bmi < 18.5) {
-//     console.log("Under weight")
-// }
-// else if (18.5 <= bmi && bmi <= 24.9) {
-//     console.log("Normal")
-// }
-// else if (25 <= bmi && bmi <= 29.9) {
-//     console.log("Over weight")
-// }
-// else if (30 <= bmi && bmi <= 34.9) {
-//     console.log("Obesity (Class I)")
-// }
-// else if (35 <= bmi && bmi <= 39.9) {
-//     console.log("Obesity (Class II)")
-// }
-// else {
-//     console.log("Obesity (Class III)")
-// }
-
-
-
-let dayString = prompt("Insert day");
-console.log(typeof dayString);
-let day = Number(dayString);
-console.log(day);
-console.log(typeof day);
-let dayName;
-
-switch(day) {
-    case 1:
-        dayName = 'Monday';
-        break;
-    case 2:
-        dayName = 'Tuesday';
-        break;
-    case 3:
-        dayName = 'Wednesday';
-        break;
-    case 4:
-        dayName = 'Thursday';
-        break;
-    case 5:
-        dayName = 'Friday';
-        break;
-    case 6:
-        dayName = 'Saturday';
-        break;
-    case 7:
-        dayName = 'Sunday';
-        break;
-    default:
-        dayName = 'Invalid day';
+if (bmi < 18.5) {
+    console.log("Under weight")
+}
+else if (18.5 <= bmi && bmi <= 24.9) {
+    console.log("Normal")
+}
+else if (25 <= bmi && bmi <= 29.9) {
+    console.log("Over weight")
+}
+else if (30 <= bmi && bmi <= 34.9) {
+    console.log("Obesity (Class I)")
+}
+else if (35 <= bmi && bmi <= 39.9) {
+    console.log("Obesity (Class II)")
+}
+else {
+    console.log("Obesity (Class III)")
 }
 
-console.log (dayName);
+
+
+// let dayString = prompt("Insert day");
+// console.log(typeof dayString);
+// let day = Number(dayString);
+// console.log(day);
+// console.log(typeof day);
+// let dayName;
+
+// switch(day) {
+//     case 1:
+//         dayName = 'Monday';
+//         break;
+//     case 2:
+//         dayName = 'Tuesday';
+//         break;
+//     case 3:
+//         dayName = 'Wednesday';
+//         break;
+//     case 4:
+//         dayName = 'Thursday';
+//         break;
+//     case 5:
+//         dayName = 'Friday';
+//         break;
+//     case 6:
+//         dayName = 'Saturday';
+//         break;
+//     case 7:
+//         dayName = 'Sunday';
+//         break;
+//     default:
+//         dayName = 'Invalid day';
+// }
+
+// console.log (dayName);
 
