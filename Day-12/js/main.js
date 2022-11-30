@@ -176,17 +176,19 @@ if( hasPlus && countryCode == 976 && mobile.length == 12 && Number.isInteger(mob
     console.log("Баяр хүргэе. \nТа Монгол улсын утасны дугаарыг улсын кодтой хамт зөв оруулсан байна.");
 }
 else {
-    // console.log("Та Монгол улсын утасны дугаарыг буруу оруулсан байна.");
+     console.error("Та Монгол улсын утасны дугаарыг буруу оруулсан байна.");
 
     if(mobile.length != 12) {
-        console.log("утасны дугаар илүү эсвэл дутуу оронтой байна.");
+        console.error("утасны дугаар илүү эсвэл дутуу оронтой байна.");
     }
 
     if(!hasPlus) {
-        console.log("+ тэмдэг дутуу байна");
+        console.error("+ тэмдэг дутуу байна");
     }
     
     if (hasPlus && countryCode != 976) {
-        console.log("Улсын код буруу");
+        console.error("Улсын код буруу");
     }
 }
+
+
