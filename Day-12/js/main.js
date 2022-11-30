@@ -192,3 +192,47 @@ else {
 }
 
 
+
+let p = prompt("Бутархай тоо оруулна уу");
+console.log(Math.round(p));
+
+
+
+
+let number1 = prompt ("3 оронтой тоо оруулна уу.");
+
+let digit1 = Number(number1.substr(0,1));
+let digit2 = Number(number1.substr(1,1));
+let digit3 = Number(number1.substr(2,1));
+let sum = digit1 + digit2 + digit3;
+
+console.log("Sum of digit = " + sum);
+
+
+
+// let num1 = prompt("Insert the first number");
+// let num2 = prompt("Insert the second number");
+
+
+// let random = Math.floor(Math.random()*(num2 - num1));
+// console.log("Random number" + random);
+
+
+
+// Exercise 3
+console.log("====================== Exercise 3 ================");
+
+const year = prompt("Жил оруулна уу.");
+let result = "";
+
+// if (((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0))
+// {
+//     console.log(`${year} = Өндөр жил`);
+// }
+// else {
+//     console.log(`${year} = Өндөр жил биш`);
+// }
+
+
+(((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0)) ? result = "Өндөр жил" : result = "Өндөр жил биш";
+console.log(year + " он = " + result);
