@@ -177,8 +177,113 @@ Example1: input: 11, output: true
 https://mn.wikipedia.org/wiki/%D0%90%D0%BD%D1%85%D0%BD%D1%8B_%D1%82%D0%BE%D0%BE
 */
 
-let number = Number(prompt("Тоо оруулна уу."));
 
+
+
+
+
+
+
+
+// // String exercise - 1
+// // Escape sequence
+// /*
+// 1 удаагийн хэвлэлтээр үүнийг хэвлэж гаргана уу.
+
+// Hello I am "Name Here".
+// I am 'Age here' years old.
+//     This is the new line with tab and some \backslashes\.
+// */
+
+// console.log(`Hello I am "Name Here".\nI am 'Age here' years old.\n\tThis is the new line with tab and some \\backslashes\\.`) 
+// console.log("Hello I am \"Name Here\".\nI am 'Age here' years old.\n\tThis is the new line with tab and some \\backslashes\\.") 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// String exercise - 3
+// // Огноо хэвлэн гаргах
+// /* Гараас огноо, сар, өдөр гэсэн утгуудыг аван дараах форматын дагуу харуулна уу. 
+// Жишээ 2009, 12, 31 гэж орж ирвэл “2009-12-31”. Анхаарах зүйл хэрвээ өдөр, сар нэг оронтой байвал 2 оронтой болгох буюу сар нь 
+// 1 гэж байвал “01” болгох, гараас оруулж байгаа утгыг шалгах
+// */
+
+
+// let year = prompt("Insert year / in 4 digit  2000, 1999 etc /:");
+
+// while (year.length != 4 || !Number.isInteger(Number(year))) {
+//     year = prompt("Year is wrong. Must be in 4 digit / 2000, 1999 etc / \nInsert year again. :");
+// }
+
+// let month = prompt("Insert month:");
+// while (month == "0" || Number(month)>12 || Number(month) < 1 || !Number.isInteger(Number(month)) ) {
+//     month = prompt("Month is wrong. Insert month again. (value must be 1-12):");
+// }
+
+// let date = prompt("Insert date:");
+// while (date == "0" || Number(date)>31 || Number(date) < 1  || !Number.isInteger(Number(date))) {
+//     date = prompt("Day is wrong. Insert day again. (value must be 1-31):");
+// }
+
+// console.log("Year = " + year);
+// console.log("Month = " + month);
+// console.log("Date = " + date);
+
+// // Remove white spaces from beginning and end.
+// year = year.trim();
+// month = month.trim();
+// date = date.trim();
+// fullDate = "";
+
+// // Year Checking
+// if (year.length != 4 || year == "0") {
+//     console.error("Year is wrong");
+// }
+// if (month.length > 2 || month == "0" || Number(month)>12) {
+//     console.error("Month is wrong");
+// }
+// if (date.length > 2 || date == "0" || Number(date)>31) {
+//     console.error("Date is wrong");
+// }
+
+// if(month.length == 1 && month != "0") {
+//     month = "0" + month;
+//     console.log("Month is changed to -- " + month);
+// }
+
+// if(date.length == 1 && date != "0") {
+//     date = "0" + date;
+//     console.log("Day is changed to --" + date);
+// }
+
+// if (month == "02" || month == "2") {
+//     if(28 < Number(date)) {
+//         console.error("2 cар 28-аас илүү хоногтой байж болохгүй");
+//     }
+// }
+
+// if (month == "02" || month == "2") {
+//     if(28 < Number(date)) {
+//         console.error("2 cар 28-аас илүү хоногтой байж болохгүй");
+//     }
+// }
+
+
+// fullDate = year + "-" + month + "-" + date;
+// console.log (fullDate);
 
 
 
