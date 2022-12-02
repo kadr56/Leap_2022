@@ -167,16 +167,191 @@
 
 
 
-// Isn't it prime number?
+
+
+
+
+// List of prime number
+
+
+let number = Number(prompt("Insert number"));
+console.log("Let's check if this number : " + number);
+i = 2;
+isPrimeNumber = true;
+
+while (i < number) {
+    // console.log(number + "/" + i + " ======> remainder = " + number%i)
+
+    if(number % i != 0) {
+        // isPrimeNumber = false;
+        console.log("number = " + number);
+    }
+
+    i++;
+}
+
+
+if(isPrimeNumber) {
+    console.log("Prime number");
+} 
+else {
+    console.log("Not a prime number");
+}
+
+
+
+
+
+
+
+
+
+// // Isn't it prime number?
+// /*
+// n < 100 тоо promt оор оруулна. n тоог анхны тоо эсэхийг шалгана.
+// Example1: input: 1, output: true
+// Example1: input: 6, output: false
+
+// Example1: input: 11, output: true
+// https://mn.wikipedia.org/wiki/%D0%90%D0%BD%D1%85%D0%BD%D1%8B_%D1%82%D0%BE%D0%BE
+// */
+
+// let number = Number(prompt("Insert number between 1-100"));
+// console.log("Let's check if this number : " + number);
+// i = 2;
+// isPrimeNumber = true;
+
+// while (i < number) {
+//     // console.log(number + "/" + i + " ======> remainder = " + number%i)
+
+//     if(number % i == 0) {
+//         isPrimeNumber = false;
+//         // console.log("Setting the value to false");
+//     }
+
+//     i++;
+// }
+
+
+// if(isPrimeNumber) {
+//     console.log("Prime number");
+// } 
+// else {
+//     console.log("Not a prime number");
+// }
+
+
+
+
+
+
+
+// // Palindromic number
+// /*
+// prompt ашиглан n -д утга орууlахад palindrome тоо мөн эсэхийг шалгах.
+// Example1 : input: 111, output: true
+// Example2 : input: 110, output: false
+// Example3 : input: 101, output: true
+// https://en.wikipedia.org/wiki/Palindromic_number
+// */
+
+
+// // 
+// let number = prompt("insert any number");
+// let flipNumber = "";
+// digit = number.length;
+
+// console.log(number);
+// console.log("орон: " + digit);
+// count = digit;
+
+// while (count >= 0) {
+//     console.log("count = " + count);
+//     flipNumber = flipNumber + number.charAt(count);
+//     console.log("Flipped number = " + count);
+//     count--;
+// }
+
+// console.log("flipped number = " + flipNumber);
+
+
+// if(number == flipNumber) {
+//     console.log("TRUE");
+// } 
+// else {
+//     console.log("FALSE");
+// }
+
+
+
+
+
+
+
+
+// // pibanocci number
+// /*
+// prompt оор n тоо орж ирэхэд тухайн n хүртлэх ширхэг Fibonacci дарааллын тоог хэвлэнэ үү.
+// Example 1: input (5) -> 1 1 2 3 5 
+// https://en.wikipedia.org/wiki/Fibonacci_number
+// */
+
+// let maxNumber = Number(prompt("Enter number"));
+// firstNumber = 0, 
+// secondNumber = 1;
+
+// console.log("Fibonacci Series till " + maxNumber + " terms:");
+
+// while (firstNumber <= maxNumber) {
+//   console.log(firstNumber);
+//   let nextNumber = firstNumber + secondNumber;
+//   firstNumber = secondNumber;
+//   secondNumber = nextNumber;
+// }
+
+
+
+
+
+
+
+
+
+// // Factorial
+// /*
+// Заавар: n! - n факториал гэж уншина. Энэ нь 1,2,3,…,n тоонуудын үржвэр байна
+// n!=1⋅2⋅3⋅⋯⋅n
+// 5! = 120 / 1*2*3*4*5/
+// Бодлого : 
+// prompt - оор гараас тоо авч тэр тооныхоо факториалыг олох.
+// */
+
+// const maxNumber = Number(prompt("Factorial exercise\nEnter number"));
+// let i = 1;
+// let sum = 1;
+// //let text = "";
+// while (i <= maxNumber) {
+//     sum = sum * i;
+//     //text = text + "*" + i;
+//     i++;
+//     console.log("sum = " + sum);
+// }
+
+// //console.log(text);
+// console.log(maxNumber + "'s factorial is = " + sum);
+
+
+
+
+
+
+// Number digits
 /*
-n < 100 тоо promt оор оруулна. n тоог анхны тоо эсэхийг шалгана.
-Example1: input: 1, output: true
-Example1: input: 6, output: false
-
-Example1: input: 11, output: true
-https://mn.wikipedia.org/wiki/%D0%90%D0%BD%D1%85%D0%BD%D1%8B_%D1%82%D0%BE%D0%BE
-*/
-
+1. Prompt - оор 1 тоо авна.
+2. Prompt - оор авсан тоог хэдэн оронтойг хэвлэж гарга.
+example: input = 1234567; digit: = 7;
+// */
+// const maxNumber = Number(prompt("Enter number"));
 
 
 
@@ -203,6 +378,29 @@ https://mn.wikipedia.org/wiki/%D0%90%D0%BD%D1%85%D0%BD%D1%8B_%D1%82%D0%BE%D0%BE
 
 
 
+
+// // String exercise - 2
+// // Simple assignment
+
+// /*
+// 1. Өөрийн нэрийн урт, овог нэрийнхээ уртыг харьцуулж үз.
+// 2. Бүх тэмдэгтүүдийг жижиг үсгээр бичнэ үү.
+// 3. Бүх тэмдэгтүүдийг том үсгээр бичнэ үү.
+// 4. 'Pinecone academy- н' болон ' leap хөтөлбөрт тавтай морилго уу? ' - г нэг мөр болгон нэгтгэнэ үү. “concat()”
+// 5. firstName, LastName, country, city, age, job хувьсагч зарлан эдгээр хувьсагч орсон өгүүлбэр зохионо уу. Жишээ нь:  Намайг Болд гэдэг. Би Сүхбаатар дүүрэгт амьдардаг.  гэх мэт
+// 6. Дараах загварыг хэвлэхийн тулд console.log() болон escape тэмдэгтүүдийг ашиглана уу.
+//           1 2 3 4 5 
+//           2 3 4 5 1 
+//           3 4 5 1 2 
+//           4 5 1 2 3 
+//           5 1 2 3 4
+// */
+
+// let firstName = "Munkhbaatar";
+// let secondName = "Shagdarsuren";
+
+// console.log(firstName.length);
+// console.log(secondName.length);
 
 
 
