@@ -171,32 +171,32 @@
 
 
 
-// List of prime number
+// // List of prime number
 
 
-let number = Number(prompt("Insert number"));
-console.log("Let's check if this number : " + number);
-i = 2;
-isPrimeNumber = true;
+// let number = Number(prompt("Insert number"));
+// console.log("Let's check if this number : " + number);
+// i = 2;
+// isPrimeNumber = true;
 
-while (i < number) {
-    // console.log(number + "/" + i + " ======> remainder = " + number%i)
+// while (i < number) {
+//     // console.log(number + "/" + i + " ======> remainder = " + number%i)
 
-    if(number % i != 0) {
-        // isPrimeNumber = false;
-        console.log("number = " + number);
-    }
+//     if(number % i != 0) {
+//         // isPrimeNumber = false;
+//         console.log("number = " + number);
+//     }
 
-    i++;
-}
+//     i++;
+// }
 
 
-if(isPrimeNumber) {
-    console.log("Prime number");
-} 
-else {
-    console.log("Not a prime number");
-}
+// if(isPrimeNumber) {
+//     console.log("Prime number");
+// } 
+// else {
+//     console.log("Not a prime number");
+// }
 
 
 
@@ -246,17 +246,15 @@ else {
 
 
 
-// // Palindromic number
-// /*
-// prompt ашиглан n -д утга орууlахад palindrome тоо мөн эсэхийг шалгах.
-// Example1 : input: 111, output: true
-// Example2 : input: 110, output: false
-// Example3 : input: 101, output: true
-// https://en.wikipedia.org/wiki/Palindromic_number
-// */
+// // // Palindromic number
+// // /*
+// // prompt ашиглан n -д утга орууlахад palindrome тоо мөн эсэхийг шалгах.
+// // Example1 : input: 111, output: true
+// // Example2 : input: 110, output: false
+// // Example3 : input: 101, output: true
+// // https://en.wikipedia.org/wiki/Palindromic_number
+// // */
 
-
-// // 
 // let number = prompt("insert any number");
 // let flipNumber = "";
 // digit = number.length;
@@ -345,15 +343,74 @@ else {
 
 
 
-// Number digits
-/*
-1. Prompt - оор 1 тоо авна.
-2. Prompt - оор авсан тоог хэдэн оронтойг хэвлэж гарга.
-example: input = 1234567; digit: = 7;
-// */
-// const maxNumber = Number(prompt("Enter number"));
+// // Number digits
+// /*
+// 1. Prompt - оор 1 тоо авна.
+// 2. Prompt - оор авсан тоог хэдэн оронтойг хэвлэж гарга.
+// example: input = 1234567; digit: = 7;
+// // */
+
+// //======= String утга байдлаар олох арга =======//
+// // let number = prompt ("Insert number");
+// // console.log("Input number: " + number);
+// // console.log("Digit: " + number.length);
 
 
+// //======= Number утга байдлаар олох арга =======//
+// let num = Number(prompt ("Insert number"));
+// while (!Number.isInteger(num)) {
+//     num = Number(prompt ("You inserted STRING. Insert number only!! "));
+// }
+
+// console.log("Inserted number: " + num);
+
+// let count = 0;
+// while (num !== 0) {
+// count++;
+// num = Math.floor(num/10);
+// }
+// console.log("Number of digit: " + count);
+
+
+
+
+// ////  Урвуу тоо
+// ////  12345 -> 54321 n хувьсагчийн утгыг тоог урвуул.
+
+// // Бодолт А - Утга String байдлаар байвал
+// let number = prompt ("Insert number");
+// console.log("Input number: " + number);
+// let flipNumber;
+// let i = number.length;
+
+// while (0 < i) {
+//     flipNumber = flipNumber + number.charAt(i-1);
+//     i--;
+// }
+
+// console.log("Flipped number: " + flipNumber);
+
+
+
+
+// let number = prompt ("Insert number");
+// console.log("Input number: " + number);
+// let flipNumber = "";
+// let i = 0;
+
+// while (i < number.length) {
+//     i++;
+//     flipNumber = flipNumber + number.charAt(number.length-i);
+// }
+
+// console.log("Flipped number: " + flipNumber);
+
+
+
+
+// // Бодолт Б - Утга Number байдлаар байвал
+// let number = prompt ("Insert number");
+// console.log("Input number: " + number);
 
 
 
