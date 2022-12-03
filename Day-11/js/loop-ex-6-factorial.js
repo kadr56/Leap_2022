@@ -18,7 +18,7 @@ while (i <= maxNumber) {
     sum = sum * i;
     //text = text + "*" + i;
     i++;
-    console.log("sum = " + sum);
+    // console.log("sum = " + sum);
 }
 
 //console.log(text);
