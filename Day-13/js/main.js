@@ -408,9 +408,25 @@
 
 
 
-// // Бодолт Б - Утга Number байдлаар байвал
-// let number = prompt ("Insert number");
-// console.log("Input number: " + number);
+// Бодолт Б - Утга Number байдлаар байвал
+let number = Number(prompt ("Insert number"));0
+
+console.log("Input number: " + number);
+
+i = 0;
+
+if(number >= 1 || number === 0) {
+    i++
+}
+
+while (number / 10 >= 1) {
+    number = number / 10;
+    console.log(number);
+    i++;
+}
+
+console.log("Number of digit : " + i );
+
 
 
 
