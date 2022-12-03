@@ -374,61 +374,6 @@
 
 
 
-// ////  Урвуу тоо
-// ////  12345 -> 54321 n хувьсагчийн утгыг тоог урвуул.
-
-// // Бодолт А - Утга String байдлаар байвал
-// let number = prompt ("Insert number");
-// console.log("Input number: " + number);
-// let flipNumber;
-// let i = number.length;
-
-// while (0 < i) {
-//     flipNumber = flipNumber + number.charAt(i-1);
-//     i--;
-// }
-
-// console.log("Flipped number: " + flipNumber);
-
-
-
-
-// let number = prompt ("Insert number");
-// console.log("Input number: " + number);
-// let flipNumber = "";
-// let i = 0;
-
-// while (i < number.length) {
-//     i++;
-//     flipNumber = flipNumber + number.charAt(number.length-i);
-// }
-
-// console.log("Flipped number: " + flipNumber);
-
-
-
-
-// Бодолт Б - Утга Number байдлаар байвал
-let number = Number(prompt ("Insert number"));0
-
-console.log("Input number: " + number);
-
-i = 0;
-
-if(number >= 1 || number === 0) {
-    i++
-}
-
-while (number / 10 >= 1) {
-    number = number / 10;
-    console.log(number);
-    i++;
-}
-
-console.log("Number of digit : " + i );
-
-
-
 
 
 
