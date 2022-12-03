@@ -353,7 +353,7 @@
 // //======= Number утга байдлаар олох арга =======//
 // let num = Number(prompt ("Insert number"));
 // while (!Number.isInteger(num)) {
-//     num = Number(prompt ("You inserted STRING. Insert number only!! "));
+//     num = Number(prompt ("Үсэг оруулсан байна. Тоо оруулна уу.!! "));
 // }
 
 // console.log("Inserted number: " + num);
