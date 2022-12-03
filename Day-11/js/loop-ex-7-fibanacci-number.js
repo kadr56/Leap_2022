@@ -9,7 +9,7 @@ let maxNumber = Number(prompt("Enter number"));
 firstNumber = 0, 
 secondNumber = 1;
 
-console.log("Fibonacci Series till " + maxNumber + " terms:");
+console.log("Fibonacci Series till " + maxNumber + ":");
 
 while (firstNumber <= maxNumber) {
   console.log(firstNumber);
