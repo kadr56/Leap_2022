@@ -714,25 +714,227 @@
 
 
 
-// // **************************************  JS loop exercise - 9 ************************************** 
-// // **************************************  Convert String ************************************** 
+// // // **************************************  JS loop exercise - 9 ************************************** 
+// // // **************************************  Convert String ************************************** 
+// /*
+// example 1: input = "Hello World", output = "hELLO wORLD"
+// example 2: input = "This Is STRING!", output = "tHIS iS string!"
+// */
+
+
+// let input = prompt("Хөрвүүлэх текстээ оруулна уу.")
+// let convertedInput = "";
+
+// for (let i = 0; i < input.length; i++) {
+//     if(input.charAt(i).toUpperCase() == input.charAt(i)){
+//         convertedInput += input.charAt(i).toLowerCase();
+//     }
+//     else {
+//         convertedInput += input.charAt(i).toUpperCase();
+//     }
+// }
+
+// console.log("Хөрвүүлэх текс : " + input);
+// console.log("Үр дүн         : " + convertedInput);
+
+
+
+
+
+
+
+// // // **************************************  JS Number exercise - 1 ************************************** 
+// // // **************************************  Nearest number ************************************** 
+// /*
+// n бутархай тооны хамгийн ойрын бүхэл тоог ол.
+// */
+
+
+// let input = prompt("Бутархай тоо оруулна уу.")
+// console.log("Оруулсан тоо : " + input);
+
+// let inputRounded = Math.round(input);
+// console.log("Ойрын тоонд бүхэлчилсний дараа : " + inputRounded);
+
+
+
+
+
+// // // **************************************  JS Number exercise - 2 ************************************** 
+// // // **************************************  Numbers Sum ************************************** 
+// /*
+// 3 оронтой той ( n ) ороход тухайн 3 оронтой тооны цифрүүдийн нийлбэрийг ол.
+// */
+
+// let input = prompt("Тоо оруулна уу.")
+// console.log("Оруулсан тоо : " + input);
+
+// sum = 0;
+// let i = 0; 
+
+// while (i < input.length) {
+//     sum += Number(input.charAt(i));
+//     i++;
+// }
+
+// if(isNaN(sum)) {
+//     console.error("Алдаа гарлаа. Үсэг оруулсан байна.");
+// }
+// else {
+//     console.log("Ципрүүдийн нийлбэр : " + sum);
+// }
+
+
+
+
+// // // **************************************  JS Number exercise - 3 ************************************** 
+// // // **************************************  Random numbers between ************************************** 
+// /*
+// 1. 2 тоо prompt - оор авна.
+// 2. prompt - оор өгсөн 2 тооны хооронд дурын тоо generate хийж гаргана уу.
+// */
+
+// let input1 = prompt("Тоо №1 оруулна уу .")
+// let input2 = prompt("Тоо №2 оруулна уу.")
+// console.log("Оруулсан тоо №1 : " + input1);
+// console.log("Оруулсан тоо №2 : " + input2);
+
+
+// let max = Math.max(input1, input2);
+// let min = Math.min(input1, input2);
+
+// let random = Math.floor((Math.random()*(max - min +1)) + min);
+
+// console.log("Уг хоёр тооны дундах Random тоо: " + random);
+
+
+
+
+// // // **************************************  JS Number exercise - 4 ************************************** 
+// // // **************************************  General-Triangle ************************************** 
+// /*
+// Тэгш өнцөгт гурвалжны 2 суурын урт өгөгдсөн(a, b) бол тухайн гурвалжины налуугын уртыг( c ) ол
+// */
+
+// let side1 = Number(prompt("Тэгш өнцөгт Гурвалжны А тал оруулна уу ."));
+// let side2 = Number(prompt("Тэгш өнцөгт Гурвалжны B тал оруулна уу."));
+
+// if(isNaN(side1) || isNaN(side2)) {
+//     console.error("Алдаа. Зөвхөн тоо оруулна уу.")
+// }
+// else {
+//     console.log("Тэгш өнцөгт Гурвалжны А тал : " + side1);
+//     console.log("Тэгш өнцөгт Гурвалжны B тал : " + side2);
+    
+//     let side3 = Math.sqrt(Math.pow(side1,2) + Math.pow(side2,2))
+    
+//     console.log("Тэгш өнцөгт Гурвалжны урт C тал  /c2 = a2 + b2/: " + side3);
+// }
+
+
+
+
+// // // **************************************  JS Number exercise - 5 ************************************** 
+// // // **************************************  Simple assignment ************************************** 
+// /*
+// 1. 0-ээс 100 хүртэл санамсаргүй тоог үүсгэнэ үү.
+// 2. 50-ээс 255 хүртэлх санамсаргүй тоог үүсгэнэ үү.
+// */
+
+// //let random = Math.floor((Math.random()*(max - min +1)) + min);
+// let random1 = Math.floor(Math.random()*(100-0+1) + 0);
+// let random2 = Math.floor(Math.random()*(255-50+1) + 50);
+
+
+// console.log("0-ээс 100 хүртэл санамсаргүй тоо : " + random1);
+// console.log("50-ээс 250 хүртэл санамсаргүй тоо : " + random2);
+
+
+
+
+
+
+
+
+// // // **************************************  JS Number exercise - 6 ************************************** 
+// // // **************************************  Validate phone number ************************************** 
+// /*
+// Хэрвээ хэрэглэгч гараас утасны дугаар оруулвал өгөгдсөн утгыг тоо мөн эсвэл биш эсэхийг шалгаарай.
+// Дараа нь тухайн өгөгдсөн утасны эхний 4 орон нь +976 байгаа эсэхийг шалгана. 
+// Эцэст нь өгөгдсөн утасны дугаарын урт 12 байвал та монгол улсын утасны дугаарыг зөв орууллаа гэж харуулаарай. 
+// Хэрвээ буруу байвал та монгол улсын утасны дугаарыг буруу орууллаа гэж харуулна.
+// Жишээ нь
+// Input: +97699119911
+
+// */
+
+
+// let mobile  = prompt("Монгол улсын утасны дугаарыг оруулна уу. Жич: +976..... гэсэн байдлаар бичнэ үү.");
+// console.log("Оруулсан утасны дугаар: " + mobile);
+// let hasPlus = (mobile.substr(0,1)=="+");     //Boolean 
+// let countryCode = (mobile.substr(1,3));  
+// let number = mobile.substr(4,8);
+// // console.log(number);
+// // console.log(countryCode);
+
+
+// if( hasPlus && countryCode == "976" && mobile.length == 12 && Number.isInteger(Number(mobile)) ) {
+//     // console.log(mobile.substr(0,1));
+//     console.log("Баяр хүргэе. \nТа Монгол улсын утасны дугаарыг улсын кодтой хамт зөв оруулсан байна.");
+// }
+// else {
+//      console.error("Та Монгол улсын утасны дугаарыг буруу оруулсан байна.");
+
+//     if(mobile.length != 12) {
+//         console.error("утасны дугаар илүү эсвэл дутуу оронтой байна.");
+//     }
+
+//     if(!hasPlus) {
+//         console.error("+ тэмдэг дутуу байна");
+//     }
+    
+//     if (hasPlus && countryCode != 976) {
+//         console.error("Улсын код буруу");
+//     }
+// }
+
+
+
+
+
+// // **************************************  JS Number exercise - 7 ************************************** 
+// // **************************************  Register number validation ************************************** 
 /*
-example 1: input = "Hello World", output = "hELLO wORLD"
-example 2: input = "This Is STRING!", output = "tHIS iS string!"
+Монгол улсын иргэний бүртгэлийн дугаар болох регистрийн дугаар нь 10 оронтой эхний 2 орон нь үсэг үлдсэн нь тоо байдаг билээ. 
+Тэгвэл хэрвээ хэрэглэгч гараас 10 тэмдэгт оруулахад эхлээд тухайн оруулсан утганы урт нь 10 байгаа эсэх дараа нь эхний 2 орон нь
+ зөвхөн үсэг эсэх хамгийн эцэст нь үлдсэн 8 тэмдэгт нь бүхэлдээ тоо эсэхийг шалгана уу. 
+ Хэрвээ энэ бүх нөхцлүүд биелж байвал та монгол улсын регистрийн дугаарыг зөв орууллаа гэж харуулна уу. 
+ Хэрвээ аль нэг нөхцөл нь буруу байвал та монгол улсын иргэний бүртгэлийн дугаарыг буруу орууллаа гэж харуулна уу.
+
+Input: СЦ90091817
+
 */
+const registerNumber = prompt("Регистрийн дугаар оруулна уу.").toUpperCase();
+
+let registerChar1 = registerNumber.substr(0,1);
+let registerChar2 = registerNumber.substr(1,2);
+
+let registerN = Number(registerNumber.substr(2,8)); 
+console.log(`Оруулсан РД: ${registerNumber}`);
 
 
-let input = prompt("Хөрвүүлэх текстээ оруулна уу.")
-let convertedInput = "";
-
-for (let i = 0; i < input.length; i++) {
-    if(input.charAt(i).toUpperCase() == input.charAt(i)){
-        convertedInput += input.charAt(i).toLowerCase();
-    }
-    else {
-        convertedInput += input.charAt(i).toUpperCase();
-    }
+if (registerNumber.length == 10 && !(Number.isInteger(Number(registerChar1))) && !(Number.isInteger(Number(registerChar2))) &&  Number.isInteger(Number(registerN)))  {
+    console.log(`та монгол улсын регистрийн дугаарыг зөв орууллаа.`);
+}
+else
+{
+    console.error(`та монгол улсын иргэний бүртгэлийн дугаарыг буруу орууллаа.`);
 }
 
-console.log("Хөрвүүлэх текс : " + input);
-console.log("Үр дүн         : " + convertedInput);
+if(registerNumber.length != 10) {
+    console.error(`регистрийн дугаарын орон дутуу эсвэл илүү байна.`);
+}
+
+if(!isNaN(Number(registerChar1)) || (!isNaN(Number(registerChar2)))) {
+    console.error(`регистрийн дугаарын Эхний 2 орон үсэг байх шаардлагатай`);
+}
