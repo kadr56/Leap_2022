@@ -609,57 +609,54 @@
 
 
 
-// **************************************  String exercise - 3.3 ************************************** 
-// **************************************  Үүрэн телефоны Operator олох ************************************** 
+// // **************************************  String exercise - 3.3 ************************************** 
+// // **************************************  Үүрэн телефоны Operator олох ************************************** 
 
-/* 2. Гараас утасны дугаар ( 99001234 ) аван шалгах, зөв дугаар бол харгалзах операторыг (Unitel, Mobicom, G-Mobile, Skytel) 
-хэвлэх , буруу дугаар бол буруу гэсэн мессежийг өгөх
-*/
-
-
-let mobileNumber = prompt("Утасны дугаараа оруулна уу. /8 оронтой байх 99003322 гэх мэт. /")
-console.log("Оруулсан утасны дугаар : " + mobileNumber);
-// validation 
-
-while (!(Number.isInteger(Number(mobileNumber))) || mobileNumber.length != 8) {
-    mobileNumber = prompt("Утасны дугаараа зөв оруулна уу. /8 оронтой байх 99003322 гэх мэт. /")
-}
-
-let firstTwoDigit = mobileNumber.substring(0,2);
-let operator = "Not defined operator";
+// /* 2. Гараас утасны дугаар ( 99001234 ) аван шалгах, зөв дугаар бол харгалзах операторыг (Unitel, Mobicom, G-Mobile, Skytel) 
+// хэвлэх , буруу дугаар бол буруу гэсэн мессежийг өгөх
+// */
 
 
+// let mobileNumber = prompt("Утасны дугаараа оруулна уу. /8 оронтой байх 99003322 гэх мэт. /")
+// console.log("Оруулсан утасны дугаар : " + mobileNumber);
+// // validation 
 
-for (let i = 0; i < mobileNumber.length; i++) {
+// while (!(Number.isInteger(Number(mobileNumber))) || mobileNumber.length != 8) {
+//     mobileNumber = prompt("Утасны дугаараа зөв оруулна уу. /8 оронтой байх 99003322 гэх мэт. /")
+// }
 
-    if(firstTwoDigit == "80" || firstTwoDigit == "86" || firstTwoDigit == "88" ) {
-        operator = "Unitel";
-    }
+// let firstTwoDigit = mobileNumber.substring(0,2);
+// let operator = "Not defined operator";
 
-    if(firstTwoDigit == "91" || firstTwoDigit == "96" || firstTwoDigit == "90" || firstTwoDigit == "90" || firstTwoDigit == "90") {
-        operator = "Skytel";
-    }
 
-    if(firstTwoDigit == "85" || firstTwoDigit == "99" || firstTwoDigit == "94" || firstTwoDigit == "75") {
-        operator = "Mobicom";
-    }
 
-    if(firstTwoDigit == "75" || firstTwoDigit == "83" || firstTwoDigit == "93" || firstTwoDigit == "97" || firstTwoDigit == "98") {
-        operator = "G-Mobile";
-    }
+// for (let i = 0; i < mobileNumber.length; i++) {
 
-}
+//     if(firstTwoDigit == "80" || firstTwoDigit == "86" || firstTwoDigit == "88" ) {
+//         operator = "Unitel";
+//     }
 
-console.log("\nOperator : " + operator);
+//     if(firstTwoDigit == "91" || firstTwoDigit == "96" || firstTwoDigit == "90" || firstTwoDigit == "90" || firstTwoDigit == "90") {
+//         operator = "Skytel";
+//     }
 
+//     if(firstTwoDigit == "85" || firstTwoDigit == "99" || firstTwoDigit == "94" || firstTwoDigit == "75") {
+//         operator = "Mobicom";
+//     }
+
+//     if(firstTwoDigit == "75" || firstTwoDigit == "83" || firstTwoDigit == "93" || firstTwoDigit == "97" || firstTwoDigit == "98") {
+//         operator = "G-Mobile";
+//     }
+
+// }
+
+// console.log("\nOperator : " + operator);
 
 
 
 
 
 // console.log('Day 14\n');
-
-
 // console.log("Find out the even numbers from 1 to 10");
 
 // const max = 10;
@@ -671,3 +668,49 @@ console.log("\nOperator : " + operator);
 //     }
 //     i++; 
 // }
+
+
+
+
+// // **************************************  JS loop exercise - 8 ************************************** 
+// // **************************************  Guess the number ************************************** 
+/*
+1. 1-100 ийн хооронд random оор 1 утга авдаг randomNumber гэсэн variable зарлана уу.
+2. Prompt ашиглан 1 утга аваад тэр тоог таах хүртэл зогсолтгүй ажиллах loop бичээргэй. 
+3. Хэрвээ prompt - оос авсан утга нь randomNumber оос их бол "таны оруулсан тоо их байна" г.м чиглүүлэх маягаар хэвлэдэг байх.
+*/
+
+let max = 100;
+let min = 1;
+
+let random = Math.floor(Math.random() * (max - min + 1) + min);
+let guessNumber = 0;
+console.log("Оруулсан тоо: " + random);
+
+guessed = false;
+
+
+
+while (!guessed) {
+
+    guessNumber = prompt("Random = " + random + "\nRandom тоог таах тоглоом. Тоо оруулна уу: /1-100 хооронд утга оруулна уу./ ", );
+    
+    if (!Number.isInteger(Number(guessNumber))){
+        alert("Үсэг болон Тэмдэгт оруулахгүй. Зөвхөн тоо оруулна уу.")
+    }
+
+    if (guessNumber > random) {
+        alert("Арай их байна.Дахиад оролдоно уу.")
+    }
+    if (guessNumber < random) {
+        alert("Арай бага байна.Дахиад оролдоно уу.")
+    }
+    if (guessNumber == random) {
+        alert("Баяр хүргэе та таалаа")
+        guessed = true;
+    } 
+
+}
+
+
+

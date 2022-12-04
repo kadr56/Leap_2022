@@ -86,7 +86,7 @@ console.log ("FINAL RESULT - FULL DATE: " + fullDate);
 
 
 let mobileNumber = prompt("Утасны дугаараа оруулна уу. /8 оронтой байх 99003322 гэх мэт. /")
-console.log("Оруулсан утасны дугаар : " + mobileNumber);
+console.log("\n\nОруулсан утасны дугаар : " + mobileNumber);
 // validation 
 
 while (!(Number.isInteger(Number(mobileNumber))) || mobileNumber.length != 8) {
@@ -118,6 +118,6 @@ for (let i = 0; i < mobileNumber.length; i++) {
 
 }
 
-console.log("\n\nOperator : " + operator);
+console.log("Operator : " + operator);
 
 
