@@ -1,58 +1,123 @@
-// // **************************************  String exercise - 2 ************************************** 
-// // **************************************  Simple assignment ************************************** 
+// **************************************  String exercise - 3.1 ************************************** 
+// **************************************  Огноо хэвлэн гаргах ************************************** 
 
-// /*
-// 1. Өөрийн нэрийн урт, овог нэрийнхээ уртыг харьцуулж үз.
-// 2. Бүх тэмдэгтүүдийг жижиг үсгээр бичнэ үү.
-// 3. Бүх тэмдэгтүүдийг том үсгээр бичнэ үү.
-// 4. 'Pinecone academy- н' болон ' leap хөтөлбөрт тавтай морилго уу? ' - г нэг мөр болгон нэгтгэнэ үү. “concat()”
-// 5. firstName, LastName, country, city, age, job хувьсагч зарлан эдгээр хувьсагч орсон өгүүлбэр зохионо уу. Жишээ нь:  Намайг Болд гэдэг. Би Сүхбаатар дүүрэгт амьдардаг.  гэх мэт
-// 6. Дараах загварыг хэвлэхийн тулд console.log() болон escape тэмдэгтүүдийг ашиглана уу.
-//           1 2 3 4 5 
-//           2 3 4 5 1 
-//           3 4 5 1 2 
-//           4 5 1 2 3 
-//           5 1 2 3 4
-// */
+// String exercise - 3
+// Огноо хэвлэн гаргах
+/* Гараас огноо, сар, өдөр гэсэн утгуудыг аван дараах форматын дагуу харуулна уу. 
+Жишээ 2009, 12, 31 гэж орж ирвэл “2009-12-31”. Анхаарах зүйл хэрвээ өдөр, сар нэг оронтой байвал 2 оронтой болгох буюу сар нь 
+1 гэж байвал “01” болгох, гараас оруулж байгаа утгыг шалгах
+*/
 
-console.log(`\t 1. `);
 
-let firstName = "Munkhbaatar";
-let secondName = "Shagdarsuren";
+let year = prompt("Insert year / in 4 digit  2000, 1999 etc /:");
 
-console.log(firstName + "  char length:" + firstName.length);
-console.log(secondName + "  char length:" + secondName.length);
-if (firstName.length > secondName.length) {
-    console.log("---> firstName is longer");
-} 
-else {
-    console.log("---> secondName is longer");
+while (year.length != 4 || !Number.isInteger(Number(year))) {
+    year = prompt("Year is wrong. Must be in 4 digit / 2000, 1999 etc / \nInsert year again. :");
 }
 
+let month = prompt("Insert month:");
+while (month == "0" || Number(month)>12 || Number(month) < 1 || !Number.isInteger(Number(month)) ) {
+    month = prompt("Month is wrong. Insert month again. (value must be 1-12):");
+}
 
-console.log(`\n\t 2. `);
+let date = prompt("Insert date:");
+while (date == "0" || Number(date)>31 || Number(date) < 1  || !Number.isInteger(Number(date))) {
+    date = prompt("Day is wrong. Insert day again. (value must be 1-31):");
+}
 
-console.log(firstName.toLowerCase() + "\n" + secondName.toLowerCase() + "\n");
+console.log("Year = " + year);
+console.log("Month = " + month);
+console.log("Date = " + date);
 
-console.log(`\n\t 3. `);
-console.log(firstName.toUpperCase() + "\n" + secondName.toUpperCase());
+// Remove white spaces from beginning and end.
+year = year.trim();
+month = month.trim();
+date = date.trim();
+fullDate = "";
+
+// Year Checking
+if (year.length != 4 || year == "0") {
+    console.error("Year is wrong");
+}
+if (month.length > 2 || month == "0" || Number(month)>12) {
+    console.error("Month is wrong");
+}
+if (date.length > 2 || date == "0" || Number(date)>31) {
+    console.error("Date is wrong");
+}
+
+if(month.length == 1 && month != "0") {
+    month = "0" + month;
+    console.log("Month is changed to -- " + month);
+}
+
+if(date.length == 1 && date != "0") {
+    date = "0" + date;
+    console.log("Day is changed to --" + date);
+}
+
+if (month == "02" || month == "2") {
+    if(28 < Number(date)) {
+        console.error("2 cар 28-аас илүү хоногтой байж болохгүй");
+    }
+}
+
+if (month == "02" || month == "2") {
+    if(28 < Number(date)) {
+        console.b
+    }
+}
+
+fullDate = year + "-" + month + "-" + date;
+console.log ("FINAL RESULT - FULL DATE: " + fullDate);
 
 
-console.log(`\n\t 4. `);
-let str1 = "Pinecone academy- н";
-let str2 = " leap хөтөлбөрт тавтай морилго уу";
-console.log(str1.concat(str2));
 
-console.log(`\n\t 5. `);
-let firstName1 = "Munkhbaatar";
-let secondName2 = "Shagdarsuren";
-let country = "Mongolia";
-let city = "Ulaanbaatar";
-let age = "36";
-let job = "Software engineer";
 
-console.log (`My name is ${firstName1} ${secondName2}. I live in ${city} city in ${country}. I am ${age} years-old and ${job}.`);
 
-console.log(`\n\t 6. `);
 
-console.log("\n\t1 2 3 4 5 \n\t2 3 4 5 1 \n\t3 4 5 1 2 \n\t4 5 1 2 3 \n\t5 1 2 3 4");
+
+// **************************************  String exercise - 3.3 ************************************** 
+// **************************************  Үүрэн телефоны Operator олох ************************************** 
+
+/* 2. Гараас утасны дугаар ( 99001234 ) аван шалгах, зөв дугаар бол харгалзах операторыг (Unitel, Mobicom, G-Mobile, Skytel) 
+хэвлэх , буруу дугаар бол буруу гэсэн мессежийг өгөх
+*/
+
+
+let mobileNumber = prompt("Утасны дугаараа оруулна уу. /8 оронтой байх 99003322 гэх мэт. /")
+console.log("Оруулсан утасны дугаар : " + mobileNumber);
+// validation 
+
+while (!(Number.isInteger(Number(mobileNumber))) || mobileNumber.length != 8) {
+    mobileNumber = prompt("Утасны дугаараа зөв оруулна уу. /8 оронтой байх 99003322 гэх мэт. /")
+}
+
+let firstTwoDigit = mobileNumber.substring(0,2);
+let operator = "Not defined operator";
+
+
+
+for (let i = 0; i < mobileNumber.length; i++) {
+
+    if(firstTwoDigit == "80" || firstTwoDigit == "86" || firstTwoDigit == "88" ) {
+        operator = "Unitel";
+    }
+
+    if(firstTwoDigit == "91" || firstTwoDigit == "96" || firstTwoDigit == "90" || firstTwoDigit == "90" || firstTwoDigit == "90") {
+        operator = "Skytel";
+    }
+
+    if(firstTwoDigit == "85" || firstTwoDigit == "99" || firstTwoDigit == "94" || firstTwoDigit == "75") {
+        operator = "Mobicom";
+    }
+
+    if(firstTwoDigit == "75" || firstTwoDigit == "83" || firstTwoDigit == "93" || firstTwoDigit == "97" || firstTwoDigit == "98") {
+        operator = "G-Mobile";
+    }
+
+}
+
+console.log("\n\nOperator : " + operator);
+
+
