@@ -11,11 +11,11 @@ Array - аас сүүлийн 3 компанийг хайчилж ав
 
 
 /*
-push()
+push() Эхэнд нь 
 pop()
 shift()
-unshift()
-splice()
+unshift() 
+splice() дундаас нь тасална
 slice()     
 
 */
