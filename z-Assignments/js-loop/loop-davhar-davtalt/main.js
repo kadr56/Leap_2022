@@ -43,25 +43,3 @@ for (let i = 1; i <= number; i++) {
 console.log(pattern);
 
 
-
-
-
-// let rows = prompt("input number");
-
-// // pattern variable carries the final pattern in string format
-// let pattern2 = "";
-
-// // outer loop runs for `rows` no. of times
-// for (let n = 1; n <= rows; n++) {
-//    // Inner Loop - I -> prints spaces
-//    for (let space = 1; space <= rows - n; space++) {
-//       pattern2 += " ";
-//    }
-
-//    // Inner Loop - II -> prints stars
-//    for (let num = 1; num <= 2 * n - 1; num++) {
-//       pattern2 += "*";
-//    }
-//    pattern2 += "\n";
-// }
-// console.log(pattern2);
