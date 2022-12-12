@@ -5,8 +5,14 @@ Reverse number
 */
 
 let str = prompt("Insert number");
-var splitString = str.split(""); 
-var reverseArray = splitString.reverse(); 
-var joinArray = reverseArray.join(""); 
 
-console.log(joinArray);
+reverseText(str)
+
+function reverseText(str) {
+
+    var splitString = str.split(""); 
+    var reverseArray = splitString.reverse(); 
+    var joinArray = reverseArray.join(""); 
+    
+    console.log(joinArray);
+}
