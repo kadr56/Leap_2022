@@ -1,11 +1,11 @@
 /*
 let array = [ "Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle", "Amazon" ] 
-    Sort the array using  method
-    Reverse the array using  method
-    Remove the first IT company from the array
-    Remove the middle IT company or companies from the array
-    Remove the last IT company from the array
-    Remove all IT companies
+    1. Sort the array using  method
+    2. Reverse the array using  method
+    3. Remove the first IT company from the array
+    4. Remove the middle IT company or companies from the array
+    5. Remove the last IT company from the array
+    6. Remove all IT companies
 */
 
 let array = [ "Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle", "Amazon" ] ;
