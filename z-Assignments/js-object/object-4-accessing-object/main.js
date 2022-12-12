@@ -72,6 +72,7 @@ function studentAverage(array) {
 
 //3. Сурагчидад овог нэмж оруулах 
 console.log("\n3. Сурагчидад овог нэмж оруулах ");
+console.log(addLastName(students));
 
 function addLastName(array) {
     for(let i = 0; i < array.length; i++) {
