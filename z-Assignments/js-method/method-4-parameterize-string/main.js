@@ -9,14 +9,18 @@ let str = "This is where i begin"
 parameterizeStr(str)
 
 function parameterizeStr(str) {
-    for(let i = 0; i < str.length; i++) {
-        if(str[i] === " ") {
-            str[i] === "-";
-        }
-    }
+    console.log("test")
+    const newStr = str.replace(" ", " - ");
+    // for(let i = 0; i < str.length; i++) {
+    //     if(str[i] === " ") {
+    //         console.log("test")
+    //         console.log(str[i]);
+    //         str[i] = "-";
+    //     }
+    // }
     // var splitString = str.split(""); 
     // var reverseArray = splitString.reverse(); ,
     // var joinArray = reverseArray.join(""); 
 }
 
-    console.log(joinArray);
+    console.log(str);

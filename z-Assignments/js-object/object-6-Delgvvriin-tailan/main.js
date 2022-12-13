@@ -55,7 +55,7 @@ let totalSale = 0;
 for(let i = 0; i < data.length; i++) {
   totalSale +=  data[i].totalPrice;
 }
-console.log("TOTAL SALES = " + totalSale);
+console.log("\tTOTAL SALES = " + totalSale);
 
 
 // 2. Нийт борлуулагдсан барааны тоог тооцоолох.
@@ -64,20 +64,20 @@ let totalProducts = 0;
 for(let i = 0; i < data.length; i++) {
   totalProducts +=  data[i].amount;
 }
-console.log("TOTAL SOLD PRODUCTS = " + totalProducts);
+console.log("\tTOTAL SOLD PRODUCTS = " + totalProducts);
 
 // 3. Хамгийн их зарагдсан 5 барааны жагсаалт /боруулалтын үнийн дүнгээр/ харуулах.
 console.log("\n3. Хамгийн их зарагдсан 5 барааны жагсаалт /боруулалтын үнийн дүнгээр/ харуулах.")
 data.sort((firstItem, secondItem) => secondItem.totalPrice - firstItem.totalPrice)
 for(let i = 0; i < 5; i++) {
-  console.log((i+1)+". "+ data[i].productName + " \t Total sales = " + data[i].totalPrice)
+  console.log("\t" + (i+1)+". "+ data[i].productName + " \t Total sales = " + data[i].totalPrice)
 }
 
 // 4. Хамгийн их зарагдсан 5 барааны жагсаалт /боруулалтын тоо хэмжээгэр/ харуулах.
 console.log("\n4. Хамгийн их зарагдсан 5 барааны жагсаалт /боруулалтын тоо хэмжээгэр/ харуулах.")
 data.sort((firstItem, secondItem) => secondItem.amount - firstItem.amount)
 for(let i = 0; i < 5; i++) {
-  console.log((i+1)+". "+ data[i].productName + '\t\t Sold amount-' + data[i].amount)
+  console.log("\t" + (i+1)+". "+ data[i].productName + '\t\t Sold amount-' + data[i].amount)
 }
 
 
@@ -85,14 +85,14 @@ for(let i = 0; i < 5; i++) {
 console.log("\n5. Хамгийн бага зарагдсан 5 барааны жагсаалт /боруулалтын үнийн дүнгээр/ харуулах.")
 data.sort((firstItem, secondItem) => firstItem.totalPrice - secondItem.totalPrice)
 for(let i = 0; i < 5; i++) {
-  console.table((i+1)+". "+ data[i].productName + "\t\t Total sales =" + data[i].totalPrice)
+  console.table("\t" + (i+1)+". "+ data[i].productName + "\t\t Total sales =" + data[i].totalPrice)
 }
 
 // 6. Хамгийн бага зарагдсан 5 барааны жагсаалт /боруулалтын тоо хэмжээгээр/ харуулах.
 console.log("\n6. Хамгийн бага зарагдсан 5 барааны жагсаалт /боруулалтын тоо хэмжээгээр/ харуулах.")
 data.sort((firstItem, secondItem) => firstItem.amount - secondItem.amount)
 for(let i = 0; i < 5; i++) {
-  console.table((i+1)+". "+ data[i].productName + '\t\t Sold amount-' + data[i].amount )
+  console.table("\t" + (i+1)+". "+ data[i].productName + '\t\t Sold amount-' + data[i].amount )
 }
 
 // 7. Хамгийн их зарагдсан /боруулалтын үнийн дүнгээр/ 10 барааны боруулалтын үнийн дүнгийн нийт боруулалтанд эзлэх хувь харуулах.
@@ -104,7 +104,7 @@ for(let i = 0; i < data.length; i++) {
 data.sort((firstItem, secondItem) => secondItem.percent - firstItem.percent);
 
 for(let i = 0; i < 5; i++) {
-  console.table((i+1)+". "+ data[i].productName + "\t\t Total sales =" + data[i].totalPrice +  '\t\t Sold percent-' + data[i].percent + " %" )
+  console.table("\t" + (i+1)+". "+ data[i].productName + "\t\t Total sales =" + data[i].totalPrice +  '\t\t Sold percent-' + data[i].percent + " %" )
 }
 
 
@@ -117,7 +117,7 @@ for(let i = 0; i < data.length; i++) {
 data.sort((firstItem, secondItem) => secondItem.percentAmt - firstItem.percentAmt);
 
 for(let i = 0; i < 5; i++) {
-  console.table((i+1)+". "+ data[i].productName + "\t\t Total sold amount =" + data[i].amount +  '\t\t Sold percent-' + data[i].percentAmt + " %" )
+  console.table("\t" + (i+1)+". "+ data[i].productName + "\t\t Total sold amount =" + data[i].amount +  '\t\t Sold percent-' + data[i].percentAmt + " %" )
 }
 
 
@@ -126,7 +126,7 @@ console.log("\n9. Хамгийн бага зарагдсан /боруулалт
 data.sort((firstItem, secondItem) => firstItem.percent - secondItem.percent);
 
 for(let i = 0; i < 5; i++) {
-  console.table((i+1)+". "+ data[i].productName + "\t\t Total sales =" + data[i].totalPrice +  '\t\t Sold percent-' + data[i].percent + " %" )
+  console.table("\t" + (i+1)+". "+ data[i].productName + "\t\t Total sales =" + data[i].totalPrice +  '\t\t Sold percent-' + data[i].percent + " %" )
 }
 
 
@@ -135,5 +135,5 @@ console.log("\n10. Хамгийн бага зарагдсан /боруулал�
 data.sort((firstItem, secondItem) => firstItem.percentAmt - secondItem.percentAmt);
 
 for(let i = 0; i < 5; i++) {
-  console.table((i+1)+". "+ data[i].productName + "\t\t Total sold amount =" + data[i].amount +  '\t\t Sold percent-' + data[i].percentAmt + " %" )
+  console.table("\t" + (i+1)+". "+ data[i].productName + "\t\t Total sold amount =" + data[i].amount +  '\t\t Sold percent-' + data[i].percentAmt + " %" )
 }
