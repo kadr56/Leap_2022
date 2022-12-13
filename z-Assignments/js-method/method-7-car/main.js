@@ -61,6 +61,8 @@ for(let i = 0; i < carBrands.length; i++) {
    console.log(carBrands[i][0].charAt(0).toLowerCase());
    if(carBrands[i][0].charAt(0).toLowerCase() == input){
       console.log("found");
+      console.log("brand : " + carBrands[i][0]);
+
       
       for(let j = 0; j < carBrands[i].length; j++) {
          console.log(carBrands[i].join("\n"));
