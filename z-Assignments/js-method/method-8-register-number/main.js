@@ -47,7 +47,7 @@ function isCorrectReg(reg) {
 
    console.log(isNaN(Number(reg.charAt(0))));
    console.log(isNaN(Number(reg.charAt(1))));
-   console.log(reg.length == 10);
+   console.log(reg.length == 8);
    if((reg.length == 10 && isNaN(Number(reg.charAt(0))) && isNaN(Number(reg.charAt(1)))) ) {
       
       console.log("correct reg");
@@ -55,6 +55,4 @@ function isCorrectReg(reg) {
       console.log("Wrong REg");
    }
     
-
-
 }
