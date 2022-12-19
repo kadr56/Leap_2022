@@ -53,24 +53,24 @@ document.querySelector('#demo').innerHTML = 'Date : ' + Date();
 
 
 
-// document.querySelector('img').src = 'img/pic.jpeg';
+document.querySelector('img').src = 'img/pic.jpeg';
 
-// document.querySelector('img').style = 'border-radius: 20px; width:200px';
-
-
-
-// const newDiv = document.createElement("h2");
-// const newContent = document.createTextNode("Манай сайтад тавтай морил");
-// newDiv.appendChild(newContent);
-// const main = document.getElementsByTagName("body");
-// main[0].appendChild(newDiv);
+document.querySelector('img').style = 'border-radius: 20px; width:200px';
 
 
 
-// const newDiv2 = document.createElement("h2");
-// const newContent2 = document.createTextNode("Манай сайтад тавтай морил");
-// newDiv2.appendChild(newContent2);
-// const main2 = document.getElementsByTagName("body");
-// const h1 = document.querySelector('h1');
-// h1.appendChild(newDiv2);
+const newDiv = document.createElement("h2");
+const newContent = document.createTextNode("Манай сайтад тавтай морил");
+newDiv.appendChild(newContent);
+const main = document.getElementsByTagName("body");
+main[0].appendChild(newDiv);
+
+
+
+const newDiv2 = document.createElement("h2");
+const newContent2 = document.createTextNode("Манай сайтад тавтай морил");
+newDiv2.appendChild(newContent2);
+const main2 = document.getElementsByTagName("body");
+const h1 = document.querySelector('h1');
+h1.appendChild(newDiv2);
 

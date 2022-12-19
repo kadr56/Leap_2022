@@ -56,7 +56,7 @@ function getRegisterInfo(reg) {
 // 1. Дурын String авахад тухайн string нь зөв РД мөн эсэхийг шалгадаг isCorrectReg(register) функц бич. 
 function isCorrectReg(reg) {
    if((reg.length == 10 && isNaN(Number(reg.charAt(0))) && isNaN(Number(reg.charAt(1)))) ) {  
-      console.log("correct reg");
+      console.log("РД формат зөв байна");
       getGender(reg);
       getBirthDay(reg);
       getBirthRegion(reg);
