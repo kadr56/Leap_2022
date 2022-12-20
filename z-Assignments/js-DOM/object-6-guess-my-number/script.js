@@ -10,7 +10,10 @@
 
 let input = document.querySelector('.guess');
 let checkBtn = document.querySelector('.btn-check')
-
+let message = document.querySelector('.message')
+let randomNumber = Math.floor((Math.random() * 20) + 1 )
+let score = 20;
+console.log('random number = ' + randomNumber);
 
 checkBtn.addEventListener('click', checkInput)
 
@@ -19,6 +22,12 @@ function checkInput() {
     console.log(checkBtn);
     if(!Number.isInteger(Number(input.value))) {
         console.log("it is not integer");
+        message.textContent = 'Тоо оруулна уу.'
+        if(input.value === randomNumber) {
+            message.textContent = 'Та хожлоо.'
+        } else if (input.value > randomNumber) {
+            message.textContent = 'Их байна.'
+        }
     } else {
         console.log("it is integer")
     }
