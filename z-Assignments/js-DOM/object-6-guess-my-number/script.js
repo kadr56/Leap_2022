@@ -13,65 +13,70 @@ let checkBtn = document.querySelector('.check')
 let resetBtn = document.querySelector('.again')
 let message = document.querySelector('.message')
 let scoreBoard = document.querySelector('.score');
-let randomNumber = Math.floor((Math.random() * 20) + 1 )
+randomNumberGenerate();
 let score = 20;
-console.log('random number = ' + randomNumber);
+let highRecord = 0;
 
 checkBtn.addEventListener('click', checkInput)
 resetBtn.addEventListener('click', reset)
 
 function checkInput() {
-    // console.log(input.value);
-    console.log(checkBtn);
-    if(!Number.isInteger(Number(input.value))) {
-        // console.log("it is not integer");
+    if (!Number.isInteger(Number(input.value))) {
         message.textContent = 'Тоо оруулна уу.'
+    } else if (input.value == '') {
+        message.textContent = 'Хоосон байна.'
     } else {
-        if(score > 0) {
-            console.log("it is integer")
-        if(Number(input.value) == randomNumber) {
-            // console.log(input.value + ' == ' + randomNumber + "??????")
-            message.textContent = 'Зөв таалаа.'
+        if (score > 0) {
+            if (Number(input.value) == randomNumber) {
+                message.textContent = 'Зөв таалаа.'
+                document.body.style.backgroundColor = "#60b347";
+                disableUserInput();
+                if(score > Number(highRecord)) {
+                    highRecord = score;
+                    document.querySelector('.highscore').textContent = score;
+                }
+            } else if (Number(input.value) > randomNumber) {
+                score--;
+                message.textContent = 'Их байна.'
+            } else if (Number(input.value) < randomNumber) {
+                score--;
+                message.textContent = 'Бага байна.'
+            }
             scoreBoard.textContent = score;
-            document.body.style.backgroundColor = "#60b347";
-        } 
-        if (Number(input.value) > randomNumber) {
-            score--;
-            scoreBoard.textContent = score;
-            message.textContent = 'Их байна.'
-            console.log('Их байна');
-        } 
-        if (Number(input.value) < randomNumber) {
-            score--;
-            scoreBoard.textContent = score;
-            message.textContent = 'Бага байна.'
-            console.log('Бага байна');
-        }
+
         } else {
             scoreBoard.textContent = score;
             message.textContent = 'Та хожигдлоо.'
             document.body.style.backgroundColor = "red";
-            input.disabled = true;
-            checkBtn.disabled = true;
-                // input.parentElement.children[0].disabled = true;
-
-
+            disableUserInput()
         }
     }
 }
 
+function disableUserInput() {
+    input.disabled = true;
+    checkBtn.disabled = true;
+    checkBtn.style.display = 'none';
+}
+
+function enableUserInput() {
+    input.disabled = false;
+    checkBtn.disabled = false;
+    checkBtn.style.display = 'inline-block';
+}
+
+function randomNumberGenerate() {
+    randomNumber = Math.floor((Math.random() * 20) + 1)
+    console.log('New Random = ' + randomNumber);
+}
 
 function reset() {
     document.body.style.backgroundColor = "black";
     score = 20;
     scoreBoard.textContent = score;
-    // input.parentElement.children[0].disabled = true;
-    
     input.value = '';
-    randomNumber = Math.floor((Math.random() * 20) + 1 )
-    console.log('Random = ' + randomNumber);
-    input.disabled = false;
-    checkBtn.disabled = false;
+    randomNumberGenerate()
+    enableUserInput();
 }
 
 
