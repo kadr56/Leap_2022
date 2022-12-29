@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    font-family: Avenir, lucida grande, tahoma, verdana, arial, sans-serif
+}
+
+h1 {
+    text-align: center;
+    background-color: bisque;
+}
+
+h4 {
+    color: #1c439b;
+}
+
+#img-container {
+    /* height: 100px; */
+    width: 100px;
+}
+
+img {
+    object-fit: cover;
+}
+
+#all-container {
+    display: grid;
+    grid-template-columns: repeat(5, 380px);
+    gap: 20px;
+    justify-content: center;
+}
