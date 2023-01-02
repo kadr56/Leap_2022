@@ -1,0 +1,33 @@
+body {
+    background-color: rgb(56, 54, 54);
+    color: white;
+}
+
+.container {
+    margin-top: 100px;
+}
+
+#date {
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+    
+}
+
+#clock {
+    font-size: 70px;
+    text-align: left;
+    margin-left: 30px;
+    color: white;
+}
+
+#digital-clock {
+    background-color: black;
+    width: 500px;
+    margin: 0 auto;
+    font-family: 'Orbitron', sans-serif;;
+    border: 2px solid white;
+    padding: 30px;
+    
+}
