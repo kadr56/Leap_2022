@@ -45,6 +45,9 @@ function getCountries(data, index) {
             <div id='population'>
                   ${data.population}
             </div>
+            <div id='area'>
+                  ${data.area}
+            </div>
 
       </div>
       `
