@@ -1,3 +1,19 @@
 /*
-    1. минут : секунд : дойл гэж харагддаг дижитал цаг хийнэ үү.
+    Image slider
+    Зураг авах линк: https://unsplash.com/
 */
+
+let images = document.querySelectorAll(".image");
+
+function removeActiveClass() {
+    for (let i = 0; i < images.length; i++) {
+        images[i].classList.remove('active')
+    }
+}
+
+for (let i = 0; i < images.length; i++) {
+    images[i].addEventListener('click', () => {
+        removeActiveClass();
+        images[i].classList.add('active');
+    })
+}
