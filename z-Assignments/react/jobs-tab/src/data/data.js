@@ -1,4 +1,4 @@
-const myData = [
+const data = [
   {
     id: "recAGJfiU4CeaV0HL",
     order: 3,
@@ -38,4 +38,4 @@ const myData = [
   },
 ];
 
-export default myData;
+export default data;
